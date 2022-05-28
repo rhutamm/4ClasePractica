@@ -2,5 +2,6 @@ $primary: $myPrimary;
 $secondary: $mySecondary;
 $dark: $myDark;
 $light: $myLight;
+$carousel-transition-duration: $myTime;
 
 @import "../bootstrap/bootstrap.scss";

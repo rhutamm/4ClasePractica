@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-success bg-success">
         <div class="container-fluid">
-            <img src="public/images/logo-01.png" alt="" width="10%" class="img-fluid">
+            <img src="public/images/logo.png" alt="" width="5%" class="img-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarN" aria-controls="navbarN" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -25,10 +25,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Menu</a>
+                        <a class="nav-link" href="#menu">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#clientes">Consulta</a>
+                        <a class="nav-link" href="#info">Información</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contactos">Contacto</a>
@@ -36,34 +36,184 @@
                 </ul>    
         </div>
     </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="public/images/slider1.jpg" alt="First slide">
+          <img class="d-block w-100 img-fluid" src="public/images/slider1.jpg" alt="...">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="public/images/slider2.jpg" alt="Second slide">
+          <img class="d-block w-100 img-fluid" src="public/images/slider2.jpg" alt="...">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="public/images/slider3.jpg" alt="Third slide">
+          <img class="d-block w-100 img-fluid" src="public/images/slider3.jpg" alt="...">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only"></span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only"></span>
       </a>
     </div>
-   
-     <footer>
-       <div id="contactos" class="text-center" style="margin-top:3rem; padding: 1rem; background-color: white;">
+    <h1 id="menu" class="text-center" style="margin: 2rem;">Menu</h1>
+    <div class="text-center container-fluid d-flex flex-row flex-wrap justify-content-evenly">
+      <div class="card border-success mb-3" style="width: 14rem;">
+        <img class="card-img-top" style="padding: 1rem;" src="public/images/parilla.jpg" alt="">
+        <div class="card-body">
+          <h5 class="card-title">A la parrilla</h5>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#parrilla">
+            Más Info.
+          </button>
+        </div>
+      </div>
+      <div class="card border-success mb-3" style="width: 14rem;">
+        <img class="card-img-top" style="padding: 1rem;" src="public/images/horno.jpg" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Al horno</h5>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#horno">
+            Más Info.
+          </button>
+        </div>
+      </div>
+      <div class="card border-success mb-3" style="width: 14rem;">
+        <img class="card-img-top" style="padding: 1rem;" src="public/images/ensalada.jpg" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Ensaladas frescas</h5>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ensalada">
+            Más Info.
+          </button>
+        </div>
+      </div>
+      <div class="card border-success mb-3" style="width: 14rem;">
+        <img class="card-img-top" style="padding: 1rem;" src="public/images/organica.jpg" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Comida Orgánica</h5>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#organica">
+            Más Info.
+          </button>
+        </div>
+      </div>
+      <div class="card border-success mb-3" style="width: 14rem;">
+        <img class="card-img-top" style="padding: 1rem;" src="public/images/dieta.jpg" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Dieta Cetogénica</h5>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#dieta">
+            Más Info.
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="parrilla" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingredientes</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, minima cupiditate quidem dolore itaque dicta modi nulla sint commodi consequatur sed, laboriosam, praesentium excepturi error accusantium molestias suscipit in quisquam laudantium vero recusandae porro voluptate molestiae velit? Enim voluptatibus quam quasi. Rem fuga officiis consequuntur nisi doloremque architecto, assumenda quasi?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="horno" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingredientes</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, voluptatum odio. Molestiae quasi nostrum, fugit ullam amet modi culpa aut dolorum tenetur quod tempora, nihil cum atque recusandae? Amet quod consequatur eum, totam laudantium nobis, odio ducimus perferendis vitae eos dolor doloremque saepe possimus officia maiores in incidunt blanditiis exercitationem?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="ensalada" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingredientes</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, voluptatum odio. Molestiae quasi nostrum, fugit ullam amet modi culpa aut dolorum tenetur quod tempora, nihil cum atque recusandae? Amet quod consequatur eum, totam laudantium nobis, odio ducimus perferendis vitae eos dolor doloremque saepe possimus officia maiores in incidunt blanditiis exercitationem?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="organica" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingredientes</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, voluptatum odio. Molestiae quasi nostrum, fugit ullam amet modi culpa aut dolorum tenetur quod tempora, nihil cum atque recusandae? Amet quod consequatur eum, totam laudantium nobis, odio ducimus perferendis vitae eos dolor doloremque saepe possimus officia maiores in incidunt blanditiis exercitationem?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="dieta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ingredientes</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, voluptatum odio. Molestiae quasi nostrum, fugit ullam amet modi culpa aut dolorum tenetur quod tempora, nihil cum atque recusandae? Amet quod consequatur eum, totam laudantium nobis, odio ducimus perferendis vitae eos dolor doloremque saepe possimus officia maiores in incidunt blanditiis exercitationem?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="ibfo" class="text-center" style="margin: 2rem;">Alimentos Orgánicos</h1>
+    <div class="p-3 mb-2 bg-success">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container p-3 mb-2 bg-white text-dark">
+          <h3 class="display-6 text-center">La importancia de los alimentos orgánicos</h3>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti amet sunt exercitationem alias, debitis dolores officia repudiandae molestias! Veritatis temporibus illum debitis excepturi beatae placeat corrupti aut dolores quasi perspiciatis quidem est dolorum aperiam nam cupiditate, aliquid ex illo. Et perspiciatis in fugit repellendus labore consequuntur sed. Fugiat voluptatem harum fuga labore accusamus, perspiciatis ex quod dolorum necessitatibus similique illum dolore beatae itaque ipsa voluptas. Ab praesentium omnis quo illum dolore nam impedit assumenda possimus, obcaecati laboriosam odio exercitationem quis ipsum error in voluptas adipisci nostrum saepe amet. Totam consequuntur fuga quae, odit facere nisi dolore at nihil minus.</p>
+        </div>
+      </div>
+    </div>
+    
+
+     <footer">
+       <div id="contactos" class="text-center" style="margin: 2rem; padding: 1rem;">
         <h1>Contactanos</h1>
         <p>+505 1234 5678</p>
-        <p>Techno@gmail.com</p>
-        <p>Managua, Nicaragua</p>
+        <p>H&N@gmail.com</p>
+        <p>Granada, Nicaragua</p>
        </div>
      </footer>
 
